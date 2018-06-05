@@ -1,25 +1,29 @@
 <template>
   <div id="app">
-    <el-container class="te" style="width: 1000px;height:800px;margin: 0 auto">
-      <el-header style="padding: 0;height:293px;background-color: #ff6600;">
-        <el-row type="flex" class="row-bg" style="height: 39px;background-color: #d90c13">
-          <el-col :span="12"><span>2018年05月21日 星期一</span></el-col>
-          <el-col :span="12" align="right"><span>欢迎访问肥城智慧党务 登录 客户端</span></el-col>
-        </el-row>
-        <div class="bg"></div>
+    <el-container style="width: 1140px;margin: 0 auto">
+      <el-header style="padding: 0;height: 400px;">
+        <el-container>
+          <el-col :span="12">
+            <span style="line-height: 40px;">2018年05月29日 星期二</span>
+          </el-col>
+          <el-col :span="12" align="right">
+            <span style="line-height: 40px;">xxx,欢迎您！</span>
+            <el-button style="padding: 8px 8px">登录</el-button>
+          </el-col>
+        </el-container>
+        <div class="bg" style="height: 300px;background-color: salmon">
+        </div>
         <el-menu mode="horizontal">
-          <el-menu-item index="1">首页</el-menu-item>
-          <el-menu-item index="2">最新公告</el-menu-item>
-          <el-menu-item index="3">基本介绍</el-menu-item>
-          <el-menu-item index="4">最新动态</el-menu-item>
-          <el-menu-item index="5">先锋礼赞</el-menu-item>
-          <el-menu-item index="6">思想引领</el-menu-item>
+          <el-menu-item index="1">处理中心</el-menu-item>
+          <el-menu-item index="2">处理中心</el-menu-item>
+          <el-menu-item index="3">消息中心</el-menu-item>
+          <el-menu-item index="4">处理中心</el-menu-item>
         </el-menu>
+        <div class="line"></div>
       </el-header>
-      <router-view/>
-      <el-footer>footer</el-footer>
+      <router-view></router-view>
+      <el-footer style="background-color: blueviolet">footer</el-footer>
     </el-container>
-
   </div>
 </template>
 
@@ -30,9 +34,4 @@ export default {
 </script>
 
 <style>
-  #app{background-image: url("./assets/bg0.png");background-repeat: repeat-x;}
-  #app .el-header .el-col span{font-size: 13px;color: white;line-height: 39px;}
-  #app .el-header .bg{background-color: #666;height: 217px;}
-  #app .el-header .el-menu-item{height: 36px;line-height: 36px;font-size: 16px;background-color: #d90c13;color: white;}
-  #app .el-header .el-menu-item:hover{background-color: #e80c13;}
 </style>

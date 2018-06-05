@@ -35,6 +35,4 @@
 </script>
 
 <style>
-  .login{width: 400px;border: 1px solid #409eff;padding: 10px;margin-left: 50%;margin-top:200px;transform: translate(-50%,0);text-align: center;}
-  .login .el-input__inner{margin-top: 10px;margin-bottom: 10px;}
 </style>
