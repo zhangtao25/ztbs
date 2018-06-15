@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import main from './../components/main'
-import login from './../components/login'
 import home from './../components/home'
+import acticlea from './../components/articlea'
+import acticleb from './../components/acticleb'
 
 Vue.use(Router)
 
@@ -14,10 +14,20 @@ export default new Router({
       name: 'home',
       component: home,
     },
+    // {
+    //   path: '/home',
+    //   name: 'home',
+    //   component: home,
+    // },
     {
-      path: '/login',
-      name: 'login',
-      component: login
-    }
+      path: '/acticlea',
+      name: 'acticlea',
+      component: acticlea,
+    },
+    {
+      path: '/acticleb',
+      name: 'acticleb',
+      component: acticleb,
+    },
   ]
 })

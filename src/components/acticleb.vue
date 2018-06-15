@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>cccccccccc</p>
+    我是acticle2
   </div>
 </template>
