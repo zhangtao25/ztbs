@@ -52,14 +52,27 @@
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            this.dialogVisible=false;
-            this.changeTheLoginState({user_type:'root',user_name:this.loginForm.username})
-            alert('submit!');
+            if (this.checkUser(this.loginForm)){
+              this.dialogVisible=false;
+              this.changeTheLoginState({user_type:'root',user_name:this.loginForm.username});
+            }
           } else {
-            alert('error submit!!');
+            this.$message.error('错了哦，这是一条错误消息');
             return false;
           }
         });
+      },
+      checkUser(loginForm){
+        if (loginForm.username=='zhangtao'&&loginForm.password==123){
+          this.$message({
+            message: '登陆成功',
+            type: 'success'
+          });
+          return true
+        } else {
+          this.$message.error('用户名密码错误');
+          return false
+        }
       }
     }
   }

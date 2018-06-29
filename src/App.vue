@@ -13,22 +13,22 @@
             <el-button style="padding: 8px 8px">{{$t('App.Register')}}</el-button>
           </el-col>
         </el-container>
-        <div class="bg" style="height: 300px;background-color: salmon">
+        <div class="bg" style="height: 300px;background-color: skyblue">
         </div>
         <el-menu mode="horizontal">
           <el-menu-item index="1">
-            <router-link to="/acticlea">处理中心</router-link>
+            <router-link to="/home">首页</router-link>
           </el-menu-item>
-          <el-menu-item index="2">处理中心</el-menu-item>
-          <el-menu-item index="3">消息中心</el-menu-item>
-          <el-menu-item index="4">处理中心</el-menu-item>
+          <el-menu-item index="2">
+            <router-link to="/PoliciesAndRegulations">政策法规</router-link>
+          </el-menu-item>
+          <el-menu-item index="3">党务公开</el-menu-item>
+          <el-menu-item index="4">入党申请</el-menu-item>
+          <el-menu-item index="5">党员信息管理</el-menu-item>
+          <el-menu-item index="6">答疑解惑</el-menu-item>
         </el-menu>
         <div class="line"></div>
       </el-header>
-      <el-pagination
-        :page-size="100"
-        :total="1000">
-      </el-pagination>
       <router-view></router-view>
       <el-footer style="background-color: blueviolet">footer</el-footer>
     </el-container>

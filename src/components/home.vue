@@ -1,19 +1,13 @@
 <template>
   <el-container style="">
-    <el-col :span="8" style="border: 1px solid #ccc;margin: 10px;padding: 10px" v-for="(i,index) of [1,2,3]" :key="index">
+    <el-col :span="8" style="border: 1px solid #ccc;margin: 10px;padding: 10px" v-for="(lan,index) of lans" :key="index">
       <el-container>
-        <el-col :span="12">title</el-col>
+        <el-col :span="12">{{lan.lanName}}</el-col>
         <el-col :span="12" align="right"><el-button>{{$t('Home.More')}}</el-button></el-col>
       </el-container>
       <ul>
-        <li>Title of article article article article article article article article article article</li>
-        <li>Title of article article article article article article article article article article</li>
-        <li>Title of article article article article article article article article article article</li>
-        <li>Title of article article article article article article article article article article</li>
+        <li v-for="(article,index) of lan.articles" :key="index">{{article}}</li>
       </ul>
-      <div class="box1" @click="fn1">
-        <div class="box2" @click="fn2"></div>
-      </div>
     </el-col>
   </el-container>
 </template>
@@ -25,7 +19,11 @@
   export default {
     data(){
       return{
-        xxx:[1,2,3]
+        lans:[
+          {lanName:'政策法规',articles:['art1','art2','art3','art4']},
+          {lanName:'党务公开',articles:['art1','art2','art3','art4']},
+          {lanName:'答疑解惑',articles:['art1','art2','art3','art4']}
+        ]
       }
     },
     methods:{
@@ -37,7 +35,6 @@
       }
     },
     mounted(){
-      // console.log(this.$t('message'))
     }
   }
 </script>

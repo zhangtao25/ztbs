@@ -1,0 +1,19 @@
+{
+  "type1":[
+    {
+      "title":"MPI",
+      "content":"Message Passing Interface (MPI) is a communication standard used in parallel computing and HPC applications. Use this template to submit your MPI application."},
+    {
+      "title":"ANSYS",
+      "content":"ANSYS offers a comprehensive software suite that spans the entire range of physics, providing access to virtually any field of engineering simulation that a design process requires."},
+    {
+      "title":"COMSOL",
+      "content":"COMSOL Multiphysics® is a general-purpose software platform, based on advanced numerical methods, for modeling and simulating physics-based problems. With COMSOL Multiphysics, you will be able to account for coupled or multiphysics phenomena."}
+  ],
+  "type2":[
+    {"title":"t1", "content":"c1"}
+  ],
+  "type3":[
+    {"title":"t1", "content":"c1"}
+  ]
+}
