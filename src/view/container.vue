@@ -58,7 +58,7 @@
     <div id="yq_link">
       <div class="margin">
         <span>友情链接：</span>
-        <a :href="item.address" target="_blank" v-for="item of yqLink">{{item.name}}</a>
+        <a :href="item.address" target="_blank" v-for="(item,index) of yqLink" :key="index">{{item.name}}</a>
       </div>
     </div>
 
