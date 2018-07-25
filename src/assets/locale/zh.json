@@ -1,0 +1,9 @@
+{
+  "App.Welcome":"欢迎您",
+  "App.Logout":"退出",
+  "App.Login":"登录",
+  "App.Login.loginRules.Username":"请输入用户名",
+  "App.Login.loginRules.Password":"请输入密码",
+  "App.Register":"注册",
+  "Home.More":"更多"
+}
