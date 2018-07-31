@@ -15,8 +15,8 @@
   #container>#yq_link>.margin{height: 41px;background-color: #ebebeb}
   #container>#yq_link>.margin>span{margin-left: 12px;font-size: 15px;font-weight: bold;color: #340000;line-height: 41px;}
   #container>#yq_link>.margin>a{margin: 0 10px 0 10px;color: #000;font-size: 14px;}
-  #bottom>.margin{border-top: 5px solid red;margin-top: 10px}
-  #bottom>.margin>p{color: #2a2a2a;text-align: center;font-size: 14px;line-height: 45px;}
+  #container>#bottom>.margin{border-top: 5px solid red;margin-top: 10px}
+  #container>#bottom>.margin>p{color: #2a2a2a;text-align: center;font-size: 14px;line-height: 45px;}
   .margin{width: 1000px;margin: 0 auto}
 </style>
 <template>
@@ -44,9 +44,9 @@
       <ul class="margin">
         <!--<li v-for="(item,index) of navLists" :key="index"><a href="">{{item}}</a></li>-->
         <li><router-link to="/container/home">首页</router-link></li>
-        <li><router-link to="/container">首页</router-link></li>
-        <li><router-link to="/container/home">首页</router-link></li>
-        <li><router-link to="/container/home">首页</router-link></li>
+        <li><router-link to="/container/zcfg">政策法规</router-link></li>
+        <li><router-link to="/container/dwgk">党务公开</router-link></li>
+        <li><router-link to="/container/cjwt">常见问题</router-link></li>
         <li><router-link to="/container/home">首页</router-link></li>
         <li><router-link to="/container/home">首页</router-link></li>
         <li><router-link to="/container/home">首页</router-link></li>
