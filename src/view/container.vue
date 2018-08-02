@@ -47,7 +47,7 @@
         <li><router-link to="/container/zcfg">政策法规</router-link></li>
         <li><router-link to="/container/dwgk">党务公开</router-link></li>
         <li><router-link to="/container/cjwt">常见问题</router-link></li>
-        <li><router-link to="/container/home">首页</router-link></li>
+        <li><router-link to="/container/pmm">党员管理</router-link></li>
         <li><router-link to="/container/home">首页</router-link></li>
         <li><router-link to="/container/home">首页</router-link></li>
       </ul>
