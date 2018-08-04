@@ -5,8 +5,8 @@
 <template>
   <div id="party-member-management">
     <el-row class="tac">
-      <el-col :span="12">
-        <el-menu>
+      <el-col :span="6" style="padding: 10px">
+        <el-menu default-active="1-1">
           <!-- nav1 -->
           <el-submenu index="1">
             <template slot="title">
@@ -32,7 +32,7 @@
           </el-submenu>
         </el-menu>
       </el-col>
-      <el-col :span="12" class="pmm_main">
+      <el-col :span="18" class="pmm_main" style="padding: 10px">
         <router-view></router-view>
       </el-col>
     </el-row>
@@ -42,6 +42,9 @@
   export default {
     data(){
       return {}
+    },
+    mounted(){
+      this.$router.push({path:"/container/pmm/pmmadd"})
     },
     methods: {
       fn(index){
